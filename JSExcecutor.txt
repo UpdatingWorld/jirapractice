@@ -1,0 +1,48 @@
+use of JSExecutor->
+
+- 2 types of objects are present- 
+ 1)Window object-(represents scrolling bar) -bydefault
+ 2)document object- (represents web page visible area)
+
+why?
+-scrolling operation, to scroll page
+- when we have to perform action on disable elements or when selenium methods are not performing action.
+- Selenium methods(click,sendKeys,etc) arenot working(when element is disable) then we can use it.
+
+2methods->
+1)executeScript()
+2)executeAsynchscript()
+
+1)executeScript(String script, object) :
+-return type is object
+-2nd argument is optional (when we have only scrolling web page) 
+- if we have to define disable element then 2nd argument is also complusary.
+- 1st argument used for scrolling operation
+
+- to perform scrolling operation there are 2 methods-
+
+1)scrollBy(int x-pixel,int y-pixel):
+- to scroll by horizontal and vertical direction.
+- we are going to scroll in form of pixels.
+- to scroll top to bottom or left to right we have to define positive value.
+- to scroll bottom to top or right to left  we have to define negative value.
+-If we want to scroll vertical we have to assign value for y-pixel and x-pixel will be 0.
+- If we want to scroll horizontal we have to assign value for x-pixel and y-pixel will be 0.
+
+2)scrollTo() :
+-  for scrolling complete height or complete width web page till last we use it.
+- document.body.scrollHeight
+- document.body.scrollWidth
+
+-  to scroll by horizontal and vertical direction.
+- we are going to scroll in form of pixels.
+- to scroll top to bottom or left to right we have to define positive value.
+- to scroll bottom to top or right to left  we have to define negative value.
+-If we want to scroll vertical we have to assign value for y-pixel and x-pixel will be 0.
+- If we want to scroll horizontal we have to assign value for x-pixel and y-pixel will be 0.
+
+<a data-v-52a6ef24="" data-v-2eb6a7e7="" 
+data-v-4ce088ae="" href="/collection/fragrance-womens-fragrance-perfumes-edt-and-edp"
+ class="" target="_self"> Perfume (EDT &amp; EDP) </a>
+
+//a[text()=' Perfume (EDT &amp; EDP) ']
